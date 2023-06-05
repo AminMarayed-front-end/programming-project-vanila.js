@@ -1,0 +1,88 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Html and Body */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #991b1b;
+  overflow: hidden;
+}
+
+/* Multi-app */
+.multi-app {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  width: 33rem;
+  height: 22rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.multi-app .score {
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #ea580c;
+}
+
+.question {
+  font-size: 2.2rem;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in;
+}
+
+input:focus {
+  border: 2px solid #ea580c;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #ea580c;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ea580c;
+  border: 1px solid #ea580c;
+  padding: none;
+}

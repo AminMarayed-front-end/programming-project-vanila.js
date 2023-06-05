@@ -1,0 +1,139 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body and html */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+/* modal */
+.modal {
+  background-color: #fff;
+  color: #212529;
+  padding: 4rem 3rem;
+  border: none;
+  border-radius: 10px;
+  min-width: 30rem;
+  height: 70rem;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+
+
+.input-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1d5db;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+  color: #fff;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  transition: background-color 1s;
+}
+
+
+
+.btn:hover,
+.btn:focus {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.show-btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .modal {
+    min-width: 50rem;
+  }
+}

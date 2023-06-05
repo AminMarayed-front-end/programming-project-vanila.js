@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>فروشگاه مراید</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__items">
+        <span class="navbar__item nav-shop">
+          <div class="number-cart">0</div>
+          <i class="fa-sharp fa-solid fa-cart-plus"></i>
+        </span>
+        <span class="navbar__item nav-title">
+          <h3>فروشگاه مراید</h3>
+        </span>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">بلاگ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">تماس</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <div class="backdrop"></div>
+    <div class="cart-modal">
+      <h3 class="modal-title">کارت شما</h3>
+      <div class="cart-content"></div>
+      <div class="modal-content">
+        <span class="total-price">مجموع قیمت : 0 ریال</span>
+        <button class="clear-modal">حذف کارت</button>
+        <button class="confirm-modal">ثبت کارت</button>
+      </div>
+    </div>
+    <h3 class="carts__header">محصولات ما</h3>
+    <section class="carts"></section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

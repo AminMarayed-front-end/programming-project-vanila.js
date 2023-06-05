@@ -1,0 +1,85 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Varaible */
+:root {
+  --background-body: #fff3f5;
+  --color-body: #231f20;
+  --background-counter: #ff4957;
+  --color-caret: #d85663;
+}
+/* Html and Body */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-body);
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Counter */
+#counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.4rem;
+}
+
+.counter-reset {
+  position: relative;
+  left: 10rem;
+  top: -9rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--color-caret);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.3rem;
+  width: 55px;
+  height: 55px;
+}
+
+.counter-num {
+  background-color: var(--background-counter);
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  box-shadow: -1px 57px 80px -17px rgba(255, 73, 87, 0.25);
+  cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-up {
+  position: relative;
+  top: 1.5rem;
+}
+
+.counter-down {
+  position: relative;
+  top: -7rem;
+}
+
+.caret {
+  color: var(--color-caret);
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="show-btn">show modal</button>
+    <section class="modal hidden">
+      <form class="modal-form">
+        <h3 class="title">Login</h3>
+        <label for="username">Username</label>
+        <div class="input-div" tabindex="-1">
+          <img src="./icons/user-regular.svg" alt="">
+          <input type="text" placeholder="Type your username" id="username" />
+        </div>
+        <label for="password">password</label>
+        <div class="input-div" tabindex="-1">
+          <img src="./icons/lock-solid.svg" alt="">
+          <input
+            type="password"
+            placeholder="Type your password"
+            id="password"
+          />
+        </div>
+        <button class="btn">login</button>
+        <h3 class="sign-up">Or Sign Up Using</h3>
+        <div class="social-icon">
+          <span>
+            <img src="./icons/facebook.svg" alt="">
+          </span>
+          <span>
+            <img src="./icons/google-plus.svg" alt="">
+          </span>
+          <span>
+            <img src="./icons/twitter.svg" alt="">
+          </span>
+        </div>
+      </form>
+    </section>
+    <div class="backdrop hidden"></div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
